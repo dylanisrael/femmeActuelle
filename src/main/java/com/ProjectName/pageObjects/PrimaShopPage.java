@@ -32,6 +32,7 @@ public class PrimaShopPage extends Page {
 
     @FindBy(xpath = "//*[@id=\"js-content-post-replace\"]/div/a")
     private List<WebElement> articles;
+
     private ArrayList<String> resultsEconomie = new ArrayList<>();
     private ArrayList<String> resultsEconomies= new ArrayList<>() ;
 

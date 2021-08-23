@@ -105,6 +105,7 @@ public class HomePage extends Page{
     public void clickOnSearchButton(){
         clickOn(searchButton);
     }
+
     public void fillSearchInput(String mot){
         wait.until(ExpectedConditions.visibilityOf(searchInput));
         searchInput.sendKeys(mot, Keys.ENTER);
@@ -147,7 +148,5 @@ public class HomePage extends Page{
         js.executeScript("arguments[0].scrollIntoView(true);", cutWord);
         js.executeScript("arguments[0].click();", cutWord);
     }
-
-
 
 }
