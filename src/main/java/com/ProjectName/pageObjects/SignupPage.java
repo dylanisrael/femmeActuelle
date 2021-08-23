@@ -2,7 +2,7 @@ package com.ProjectName.pageObjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class SignupPage extends Page{
 
@@ -15,11 +15,10 @@ public class SignupPage extends Page{
     @FindBy(xpath="//button[contains(text(), \"Suivant\")]")
     private WebElement nextButton;
 
-    public void ClickOnContinueWithEmail(){clickOn(continueWithEmail);
-    System.out.println("continue with email");}
+    public void ClickOnContinueWithEmail(){clickOn(continueWithEmail);}
 
     public void fillEmail(String email){
-        wait.until(ExpectedConditions.visibilityOf(emailField));
+        wait.until(visibilityOf(emailField));
         emailField.sendKeys(email);
     }
 

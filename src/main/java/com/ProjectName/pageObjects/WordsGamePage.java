@@ -15,8 +15,6 @@ public class WordsGamePage extends Page{
 
     public boolean textIsReadable(){
         String textColor = ColorVerify(cardLinks.get(1),"color");
-        System.out.println(textColor);
-
         return !textColor.equals("#ffffff");
     }
 

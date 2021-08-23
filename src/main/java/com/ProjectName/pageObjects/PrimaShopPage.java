@@ -2,7 +2,7 @@ package com.ProjectName.pageObjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,10 +40,10 @@ public class PrimaShopPage extends Page {
 
     public void clickOnSeeAllIssues() throws InterruptedException {
         try{
-            longWait.until(ExpectedConditions.visibilityOf(divCookie));
+            longWait.until(visibilityOf(divCookie));
             driver.switchTo().frame(1);
             clickOn(acceptCookieButton);
-        }catch (Exception e){
+        }catch (Exception ignored){
 
         }
         driver.switchTo().defaultContent();
@@ -51,7 +51,8 @@ public class PrimaShopPage extends Page {
         waitForLoadingPage();
     }
 
-    public void searchIssues(String nameWithS, String nameWithoutS) throws InterruptedException {
+    public void searchIssues(String nameWithS, String nameWithoutS){
+
         action.moveToElement(searchIssuesField).build().perform();
         searchIssuesField.sendKeys(nameWithS);
         clickOn(searchButton);
@@ -63,42 +64,36 @@ public class PrimaShopPage extends Page {
                     }
                 }
             }catch (Exception e){
-                    for (int i=0 ; i< articles.size() ; i++) {
-                        if (articles.get(i).isDisplayed()) {
-                            resultsEconomie.add(articles.get(i).getAttribute("title"));
-                        }
+                for (int i=0 ; i< articles.size() ; i++) {
+                    if (articles.get(i).isDisplayed()) {
+                        resultsEconomie.add(articles.get(i).getAttribute("title"));
                     }
+                }
+            }
 
-        }
         searchIssuesField.clear();
         searchIssuesField.sendKeys(nameWithoutS);
         clickOn(searchButton);
-        try {
-            for (int i=0 ; i< articles.size() ; i++) {
-                if (articles.get(i).isDisplayed() ){
-                    resultsEconomies.add(articles.get(i).getAttribute("title"));
 
+            try {
+                for (int i=0 ; i< articles.size() ; i++) {
+                    if (articles.get(i).isDisplayed() ){
+                        resultsEconomies.add(articles.get(i).getAttribute("title"));
+                    }
                 }
             }
-        }
-        catch (Exception e) {
-            for (int i=0 ; i< articles.size() ; i++) {
-                if (articles.get(i).isDisplayed() ){
-                    resultsEconomies.add(articles.get(i).getAttribute("title"));
-
+            catch (Exception e) {
+                for (int i=0 ; i< articles.size() ; i++) {
+                    if (articles.get(i).isDisplayed() ){
+                        resultsEconomies.add(articles.get(i).getAttribute("title"));
+                    }
                 }
             }
-        }
 
     }
 
     public boolean theResultsAreSame() {
-        System.out.println("les resultat de la recherche pour economie a "+resultsEconomie.size()+" et economies a "+resultsEconomies.size());
-        if(resultsEconomies.size() == resultsEconomie.size()){
-            return true;
-        }
-        else {
-            return false;
-        }
+
+        return resultsEconomies.size() == resultsEconomie.size();
     }
 }

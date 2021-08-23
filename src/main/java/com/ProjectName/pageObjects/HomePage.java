@@ -4,13 +4,8 @@ package com.ProjectName.pageObjects;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.internal.ExpectedExceptionsHolder;
-
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import java.util.List;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class HomePage extends Page{
 
@@ -74,7 +69,7 @@ public class HomePage extends Page{
     }
 
     public void clickOnAttendanceCertified(){
-        longWait.until(ExpectedConditions.elementToBeClickable(attendanceCertifiedByOJDLink));
+        longWait.until(elementToBeClickable(attendanceCertifiedByOJDLink));
         js.executeScript("arguments[0].click()",attendanceCertifiedByOJDLink);
     }
 
@@ -94,11 +89,11 @@ public class HomePage extends Page{
     public void clickOnLogin(){clickOn(login);}
 
     public void clickOnMyProfile(){
-        longWait.until(ExpectedConditions.visibilityOf(myProfileLink));
+        longWait.until(visibilityOf(myProfileLink));
         System.out.println("tous les elements sont visibles");
         action.moveToElement(myProfileLink).perform();
         System.out.println("hover sur profile");
-        wait.until(ExpectedConditions.visibilityOf(manageMyProfileLink));
+        wait.until(visibilityOf(manageMyProfileLink));
         clickOn(manageMyProfileLink);
     }
 
@@ -107,12 +102,12 @@ public class HomePage extends Page{
     }
 
     public void fillSearchInput(String mot){
-        wait.until(ExpectedConditions.visibilityOf(searchInput));
+        wait.until(visibilityOf(searchInput));
         searchInput.sendKeys(mot, Keys.ENTER);
     }
 
     public void clickOnVideoTab(){
-        wait.until(ExpectedConditions.visibilityOf(articleSection));
+        wait.until(visibilityOf(articleSection));
         clickOn(videoTab);
     }
 
@@ -144,7 +139,7 @@ public class HomePage extends Page{
     }
 
     public void clickOnCutWords(){
-        wait.until(ExpectedConditions.elementToBeClickable(cutWord));
+        wait.until(elementToBeClickable(cutWord));
         js.executeScript("arguments[0].scrollIntoView(true);", cutWord);
         js.executeScript("arguments[0].click();", cutWord);
     }
