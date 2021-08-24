@@ -5,7 +5,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="device" value="desktop"/>
         <classes>
-            <class name="com.ProjectName.runners.TestRunner" />
+            <class name="com.femmeActuelle.runners.TestRunner" />
         </classes>
     </test>
 </suite>
