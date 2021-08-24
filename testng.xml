@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <!--⚠️ change with your current ProjectName-->
-<suite name="ProjectName" verbose="1" >
 
-    <test name="Verification Test" >
-        <classes>
-            <class name="com.femmeActuelle.runners.TestRunner" />
-        </classes>
-    </test>
+<suite name="femmeActuelle" verbose="1" >
+<test name="Verification Test" >
+    <classes>
+        <class name="com.femmeActuelle.runners.TestRunner" />
+    </classes>
+</test>
 </suite>
