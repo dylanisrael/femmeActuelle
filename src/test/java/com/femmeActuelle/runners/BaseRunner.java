@@ -1,7 +1,8 @@
 package com.femmeActuelle.runners;
 
 import com.femmeActuelle.config.Properties;
-import com.google.common.collect.ImmutableMap;
+//import com.google.common.collect.ImmutableMap;
+import com.femmeActuelle.report.allureManager;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,12 +24,7 @@ public class BaseRunner extends AbstractTestNGCucumberTests {
                 .orElse(Properties.Config.getBrowser());
         Log.info("Tests are starting");
         Properties.DriverManager.setDriver(browserA);
-
-       allureEnvironmentWriter(ImmutableMap.<String, String>builder()
-               .put("Browser", Properties.DriverManager.getCapabilities().getBrowserName())
-               .put("Browser.Version", Properties.DriverManager.getCapabilities().getVersion())
-               .put("URL",Properties.Config.getEnvironment() )
-               .build());
+        allureManager.setAllureEnvironmentInformation();
 
     }
 

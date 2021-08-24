@@ -5,6 +5,9 @@ import com.femmeActuelle.drivers.DriverFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.sql.DriverManager;
 
 
 public class WebDriverManager {
@@ -17,7 +20,10 @@ public class WebDriverManager {
 
     public WebDriver getDriver() { return driver.get().getDriver(); }
 
-    public Capabilities getCapabilities() { return driver.get().getCapabilities(); }
+    public  Capabilities getCapabilities() {
+        Capabilities cap = ((RemoteWebDriver) getDriver()).getCapabilities();
+        return cap;
+    }
 
     public void setDriver(String browser) {
         driver.set(new DriverFactory(browser));

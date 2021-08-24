@@ -23,7 +23,6 @@ public class Configuration {
         environment     = System.getProperty("env", (String) prop.get("environment"));
         browser         = System.getProperty("browser", (String)prop.get("browser", "chrome"));
         webDriverPath   = (String)prop.get(browser.toLowerCase(), "chrome");
-
         device          = Device.valueOf(((String)prop.get("device", "desktop")).toUpperCase());
         env             = Urls.valueOf((String)environment.toUpperCase());
 
