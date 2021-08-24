@@ -112,8 +112,7 @@ public class HomePage extends Page{
     }
 
     public boolean resultsAreAllVideos(){
-        System.out.println("la liste totale des articles "+articleList.size());
-        System.out.println("la liste totale des articles avec videos "+videoArticleList.size());
+//        Log.info("Check if all results are Videos");
         return articleList.size() == videoArticleList.size();
     }
 
@@ -124,16 +123,12 @@ public class HomePage extends Page{
                 sectionRightElementsTotalSize = 0 ,
                 sectionLeftElementsTotalSize = 0;
 
-
         for (int i=0 ;i<sectionLeftContent.size();i++ ){
             sectionLeftElementsTotalSize += sectionLeftContent.get(i).getRect().getHeight();
             sectionRightElementsTotalSize += sectionRightContent.get(i).getRect().getHeight();
         }
 
-        System.out.println("section left size sum "+sectionLeftElementsTotalSize);
-        System.out.println("section rigth size sum "+sectionRightElementsTotalSize);
-        System.out.println("section left container "+leftContainerHeight);
-        System.out.println("section left size sum "+rightContainerHeight);
+//        Log.info("Checking superflous spaces");
 
         return sectionLeftElementsTotalSize < ((leftContainerHeight * 90) / 100) || sectionRightElementsTotalSize < (rightContainerHeight * 90) / 100;
     }

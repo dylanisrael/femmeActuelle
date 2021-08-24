@@ -1,5 +1,6 @@
 package com.ProjectName.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -51,9 +52,9 @@ public class PrimaShopPage extends Page {
         waitForLoadingPage();
     }
 
-    public void searchIssues(String nameWithS, String nameWithoutS){
+    public void searchIssuesWithS(String nameWithS ){
 
-        action.moveToElement(searchIssuesField).build().perform();
+        scrollTo(searchIssuesField);
         searchIssuesField.sendKeys(nameWithS);
         clickOn(searchButton);
 
@@ -70,26 +71,30 @@ public class PrimaShopPage extends Page {
                     }
                 }
             }
+        longWait.until(presenceOfAllElementsLocatedBy(By.cssSelector("div.cover > img.lazy")));
+    }
 
+    public  void searchIssuesWithoutS(String nameWithoutS){
         searchIssuesField.clear();
         searchIssuesField.sendKeys(nameWithoutS);
         clickOn(searchButton);
 
-            try {
-                for (int i=0 ; i< articles.size() ; i++) {
-                    if (articles.get(i).isDisplayed() ){
-                        resultsEconomies.add(articles.get(i).getAttribute("title"));
-                    }
-                }
-            }
-            catch (Exception e) {
-                for (int i=0 ; i< articles.size() ; i++) {
-                    if (articles.get(i).isDisplayed() ){
-                        resultsEconomies.add(articles.get(i).getAttribute("title"));
-                    }
-                }
-            }
 
+        try {
+            for (int i=0 ; i< articles.size() ; i++) {
+                if (articles.get(i).isDisplayed() ){
+                    resultsEconomies.add(articles.get(i).getAttribute("title"));
+                }
+            }
+        }
+        catch (Exception e) {
+            for (int i=0 ; i< articles.size() ; i++) {
+                if (articles.get(i).isDisplayed() ){
+                    resultsEconomies.add(articles.get(i).getAttribute("title"));
+                }
+            }
+        }
+        longWait.until(presenceOfAllElementsLocatedBy(By.cssSelector("div.cover > img.lazy")));
     }
 
     public boolean theResultsAreSame() {

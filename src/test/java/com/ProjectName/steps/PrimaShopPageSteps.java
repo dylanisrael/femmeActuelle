@@ -13,9 +13,16 @@ public class PrimaShopPageSteps implements En {
             primaShopPage.clickOnSeeAllIssues();
         });
 
-        And("^Do an research ([^\"]*) and ([^\"]*)$", primaShopPage::searchIssues);
-        Then("^The number of economy research articles with s had to be equal to the one without s\\.$", () -> {
+        And("^Do an research ([^\"]*)", (String text) -> {
+            primaShopPage.searchIssuesWithS(text);
             primaShopPage.saveScreenShotPNG();
+        });
+
+        And("^research ([^\"]*)", (String text) -> {
+            primaShopPage.searchIssuesWithoutS(text);
+            primaShopPage.saveScreenShotPNG();
+        });
+        Then("^The number of economy research articles with s had to be equal to the one without s\\.$", () -> {
             Assert.assertTrue(primaShopPage.theResultsAreSame(),"les resultats de recherche restent differents");
         });
     }

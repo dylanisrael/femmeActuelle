@@ -14,7 +14,8 @@ Feature: Annomalies mineures
     Given Go to femmeactuelle.fr
     When Click on subscribe to the magazine on the navigation bar
     And CLick on see all numbers
-    And Do an research <with s> and <without s>
+    And Do an research <with s>
+    And research <without s>
     Then The number of economy research articles with s had to be equal to the one without s.
     Examples:
     |with s        |without s|

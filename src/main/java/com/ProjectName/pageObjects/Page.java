@@ -6,29 +6,16 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
 import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.Duration;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
 import java.util.function.Function;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class Page {
 
@@ -52,6 +39,7 @@ public class Page {
 
     //    Page constructor
     Page(){
+
         // Init
         driver = Properties.DriverManager.getDriver();
         PageFactory.initElements(driver, this);
@@ -144,6 +132,9 @@ public class Page {
     protected void scroll(int height){
         js.executeScript("window.scrollBy(0,"+height+")", "");
     }
+
+    //scroll to an element
+    protected void scrollTo(WebElement element){js.executeScript("arguments[0].scrollIntoView(true);", element);}
 
     // get http request response code
     public Boolean checkUrlResponseCode(String url){

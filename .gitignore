@@ -7,3 +7,4 @@ target/
 *.iml
 local_driver/
 allure-results/
+logs/
