@@ -138,6 +138,11 @@
             <artifactId>allure-cucumber6-jvm</artifactId>
             <version>2.14.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.automatedowl</groupId>
+            <artifactId>allure-environment-writer</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
     </dependencies>
 

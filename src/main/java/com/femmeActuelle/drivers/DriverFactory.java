@@ -1,9 +1,11 @@
 package com.femmeActuelle.drivers;
 
 import com.femmeActuelle.config.Properties;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class DriverFactory extends AbsWebDriverImpl{
 
@@ -18,6 +20,10 @@ public class DriverFactory extends AbsWebDriverImpl{
 
     public WebDriver getDriver(){
         return driver;
+    }
+
+    public Capabilities getCapabilities(){
+        return ((RemoteWebDriver) driver).getCapabilities();
     }
 
     public void closeDriver(){

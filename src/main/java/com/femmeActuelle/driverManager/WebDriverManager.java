@@ -2,6 +2,7 @@ package com.femmeActuelle.driverManager;
 
 import com.femmeActuelle.config.Properties;
 import com.femmeActuelle.drivers.DriverFactory;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 
@@ -15,6 +16,8 @@ public class WebDriverManager {
     private WebDriverManager() { }
 
     public WebDriver getDriver() { return driver.get().getDriver(); }
+
+    public Capabilities getCapabilities() { return driver.get().getCapabilities(); }
 
     public void setDriver(String browser) {
         driver.set(new DriverFactory(browser));

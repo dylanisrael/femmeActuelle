@@ -85,16 +85,16 @@ public class PrimaShopPage extends Page {
 
         Log.info("Search of {}",nameWithoutS);
         try {
-            for (int i=0 ; i< articles.size() ; i++) {
-                if (articles.get(i).isDisplayed() ){
-                    resultsEconomies.add(articles.get(i).getAttribute("title"));
+            for (WebElement article : articles) {
+                if (article.isDisplayed()) {
+                    resultsEconomies.add(article.getAttribute("title"));
                 }
             }
         }
         catch (Exception e) {
-            for (int i=0 ; i< articles.size() ; i++) {
-                if (articles.get(i).isDisplayed() ){
-                    resultsEconomies.add(articles.get(i).getAttribute("title"));
+            for (WebElement article : articles) {
+                if (article.isDisplayed()) {
+                    resultsEconomies.add(article.getAttribute("title"));
                 }
             }
         }
