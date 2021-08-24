@@ -1,6 +1,5 @@
 package com.ProjectName.pageObjects;
 
-import jdk.jpackage.internal.Log;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
