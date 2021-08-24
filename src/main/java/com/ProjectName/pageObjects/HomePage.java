@@ -1,13 +1,18 @@
 package com.ProjectName.pageObjects;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import java.util.List;
 
 public class HomePage extends Page{
+
+    Logger Log = LogManager.getLogger(HomePage.class);
 
     @FindBy(linkText = "Fréquentation certifiée par l'OJD")
     private WebElement attendanceCertifiedByOJDLink;
@@ -66,6 +71,7 @@ public class HomePage extends Page{
     public  void goToHomePage(){
         get(HOME_PAGE_URL);
         cookieManager();
+        Log.info("On home page");
     }
 
     public void clickOnAttendanceCertified(){
@@ -78,6 +84,7 @@ public class HomePage extends Page{
     }
 
     public boolean anErrorPageIsDisplayed(){
+        Log.info("Checking url response code");
         return checkUrlResponseCode(getPageUrl());
     }
 
@@ -90,11 +97,10 @@ public class HomePage extends Page{
 
     public void clickOnMyProfile(){
         longWait.until(visibilityOf(myProfileLink));
-        System.out.println("tous les elements sont visibles");
         action.moveToElement(myProfileLink).perform();
-        System.out.println("hover sur profile");
         wait.until(visibilityOf(manageMyProfileLink));
         clickOn(manageMyProfileLink);
+        Log.info("Click on My Profile");
     }
 
     public void clickOnSearchButton(){
@@ -104,6 +110,7 @@ public class HomePage extends Page{
     public void fillSearchInput(String mot){
         wait.until(visibilityOf(searchInput));
         searchInput.sendKeys(mot, Keys.ENTER);
+        Log.info("Search input filled with {} ",mot);
     }
 
     public void clickOnVideoTab(){
@@ -112,7 +119,7 @@ public class HomePage extends Page{
     }
 
     public boolean resultsAreAllVideos(){
-//        Log.info("Check if all results are Videos");
+        Log.info("Checking if all results are Videos");
         return articleList.size() == videoArticleList.size();
     }
 
@@ -128,7 +135,7 @@ public class HomePage extends Page{
             sectionRightElementsTotalSize += sectionRightContent.get(i).getRect().getHeight();
         }
 
-//        Log.info("Checking superflous spaces");
+        Log.info("Checking superflous spaces");
 
         return sectionLeftElementsTotalSize < ((leftContainerHeight * 90) / 100) || sectionRightElementsTotalSize < (rightContainerHeight * 90) / 100;
     }

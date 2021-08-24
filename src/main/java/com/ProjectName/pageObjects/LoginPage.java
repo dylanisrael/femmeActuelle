@@ -1,9 +1,13 @@
 package com.ProjectName.pageObjects;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends Page{
+
+    private static final Logger Log = LogManager.getLogger(LoginPage.class);
 
     @FindBy(id = "logWithPassword")
     private WebElement loginWithPassword;
@@ -16,8 +20,14 @@ public class LoginPage extends Page{
 
     public void clickOnLoginWithPassword(){clickOn(loginWithPassword);}
 
-    public void fillPassword(String password){passwordField.sendKeys(password);}
+    public void fillPassword(String password){
 
-    public void clickOnLoginButton(){clickOn(loginButton);}
+        Log.info("Filling password");
+        passwordField.sendKeys(password);}
+
+    public void clickOnLoginButton(){
+        clickOn(loginButton);
+        Log.info("User logged succesfully");
+    }
     
 }

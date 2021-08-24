@@ -1,5 +1,8 @@
 package com.ProjectName.pageObjects;
 
+import jdk.jpackage.internal.Log;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimaShopPage extends Page {
+    private static final Logger Log = LogManager.getLogger(PrimaShopPage.class);
 
     @FindBy(css = "a.title-link")
     private WebElement seeAllIssues;
@@ -57,6 +61,7 @@ public class PrimaShopPage extends Page {
         scrollTo(searchIssuesField);
         searchIssuesField.sendKeys(nameWithS);
         clickOn(searchButton);
+        Log.info("Search of {}",nameWithS);
 
             try {
                 for (int i=0 ; i< articles.size() ; i++) {
@@ -79,7 +84,7 @@ public class PrimaShopPage extends Page {
         searchIssuesField.sendKeys(nameWithoutS);
         clickOn(searchButton);
 
-
+        Log.info("Search of {}",nameWithoutS);
         try {
             for (int i=0 ; i< articles.size() ; i++) {
                 if (articles.get(i).isDisplayed() ){
@@ -98,7 +103,7 @@ public class PrimaShopPage extends Page {
     }
 
     public boolean theResultsAreSame() {
-
+        Log.info("Checking if results are same");
         return resultsEconomies.size() == resultsEconomie.size();
     }
 }
