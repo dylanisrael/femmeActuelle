@@ -9,7 +9,7 @@ public class WordsGameSteps implements En {
     public WordsGameSteps(WordsGamePage wordsGamePage ) {
         Then("Note that the text color used for container texts is unreadable.",() -> {
             wordsGamePage.saveScreenShotPNG();
-            Assert.assertTrue(wordsGamePage.textIsReadable());
+            Assert.assertTrue(wordsGamePage.textIsReadable(),"❌ le texte n'est toujours pas tres lisible");
         });
     }
 }
