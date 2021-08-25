@@ -23,7 +23,7 @@ public class PrimaShopPageSteps implements En {
             primaShopPage.saveScreenShotPNG();
         });
         Then("^The number of economy research articles with s had to be equal to the one without s\\.$", () -> {
-            Assert.assertTrue(primaShopPage.theResultsAreSame(),"les resultats de recherche restent differents");
+            Assert.assertTrue(primaShopPage.theResultsAreSame(),"❌ les resultats de recherche restent differents");
         });
     }
 }

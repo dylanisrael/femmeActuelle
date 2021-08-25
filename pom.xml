@@ -13,7 +13,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <aspectjVersion>1.9.2</aspectjVersion>
         <aspectj.version>1.8.10</aspectj.version>
-        <allure.results.directory>target/allure-results</allure.results.directory>
+        <allure.results.directory>${basedir}/allure-results</allure.results.directory>
         <allure.report.directory>target/reports</allure.report.directory>
     </properties>
 
@@ -154,6 +154,7 @@
                 <version>2.9</version>
                 <configuration>
                     <reportVersion>2.7.0</reportVersion>
+                        <allureDownloadUrl>https://github.com/allure-framework/allure2/releases/download/%s/allure-%s.zip</allureDownloadUrl>
                 </configuration>
             </plugin>
 
@@ -168,7 +169,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/allure-results</outputDirectory>
+                            <outputDirectory>${basedir}/allure-results</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${basedir}/target/classes</directory>

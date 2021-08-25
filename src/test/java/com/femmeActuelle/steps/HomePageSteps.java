@@ -44,13 +44,13 @@ public class HomePageSteps implements En {
 
         Then("^we observed (\\d+) results for your search and all of them are in the videos category, Although not all videos\\.$", (Integer arg0) -> {
             homepage.saveScreenShotPNG();
-            Assert.assertTrue(homepage.resultsAreAllVideos());
+            Assert.assertTrue(homepage.resultsAreAllVideos(),"❌ le contenu des l'espace dedie aux videos contient des articles sans video");
         });
 
         When("^you scroll down$", homepage::scrollToFooterLevel);
 
         Then("^There is a huge gap between the newsletter container and the footer\\.$", () -> {
-            Assert.assertFalse(homepage.thereIsAHugeGap());
+            Assert.assertFalse(homepage.thereIsAHugeGap(),"❌ il existe toujours des gransds espacements inutiles");
         });
 
         When("^you scroll to the footer up to the keyword level$", () -> {

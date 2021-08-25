@@ -18,7 +18,7 @@ public class ProfilePageSteps implements En {
         });
         Then("^The size of the validate button should remain unchanged despite the entry\\.$", () -> {
             profilePage.saveScreenShotPNG();
-            Assert.assertTrue(profilePage.theSizeOfValidateButtonRemainTheSame(),"la taille du boutton change lors de la modification de l'email");
+            Assert.assertTrue(profilePage.theSizeOfValidateButtonRemainTheSame(),"❌ la taille du boutton change lors de la modification de l'email");
         });
     }
 }
