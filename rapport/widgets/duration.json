@@ -1,0 +1,61 @@
+[ {
+  "uid" : "a4259c1aeb504131",
+  "name" : "Change text color",
+  "time" : {
+    "start" : 1630404269870,
+    "stop" : 1630404281226,
+    "duration" : 11356
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "afe69c9663b1dc78",
+  "name" : "Connexion error",
+  "time" : {
+    "start" : 1630404185390,
+    "stop" : 1630404210971,
+    "duration" : 25581
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "23dd9b05ff2849d",
+  "name" : "Improve search filters",
+  "time" : {
+    "start" : 1630404259050,
+    "stop" : 1630404265226,
+    "duration" : 6176
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9cfe0698e057a50",
+  "name" : "No smart number search",
+  "time" : {
+    "start" : 1630404211083,
+    "stop" : 1630404232090,
+    "duration" : 21007
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "cfc85e3288e30fbb",
+  "name" : "Superfluous space",
+  "time" : {
+    "start" : 1630407500307,
+    "stop" : 1630407516569,
+    "duration" : 16262
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d6e8eb432349806",
+  "name" : "Button size varying",
+  "time" : {
+    "start" : 1630404232111,
+    "stop" : 1630404259033,
+    "duration" : 26922
+  },
+  "status" : "failed",
+  "severity" : "minor"
+} ]

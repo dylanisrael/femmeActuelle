@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Aug 31 11:04:29 WAT 2021","Tue Aug 31 11:04:41 WAT 2021","11356","","Recommandations","","Change text color","","Change text color",""
+"failed","Tue Aug 31 11:03:05 WAT 2021","Tue Aug 31 11:03:30 WAT 2021","25581","","Annomalies mineures","","Connexion error","","Connexion error",""
+"failed","Tue Aug 31 11:04:19 WAT 2021","Tue Aug 31 11:04:25 WAT 2021","6176","","Recommandations","","Improve search filters","","Improve search filters",""
+"failed","Tue Aug 31 11:03:31 WAT 2021","Tue Aug 31 11:03:52 WAT 2021","21007","","Annomalies mineures","","No smart number search","","No smart number search",""
+"failed","Tue Aug 31 11:58:20 WAT 2021","Tue Aug 31 11:58:36 WAT 2021","16262","","Recommandations","","Superfluous space","","Superfluous space",""
+"failed","Tue Aug 31 11:03:52 WAT 2021","Tue Aug 31 11:04:19 WAT 2021","26922","","Annomalies mineures","","Button size varying","","Button size varying",""

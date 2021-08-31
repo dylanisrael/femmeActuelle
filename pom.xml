@@ -14,7 +14,7 @@
         <aspectjVersion>1.9.2</aspectjVersion>
         <aspectj.version>1.8.10</aspectj.version>
         <allure.results.directory>${basedir}/allure-results</allure.results.directory>
-        <allure.report.directory>target/reports</allure.report.directory>
+        <allure.report.directory>${basedir}/report</allure.report.directory>
     </properties>
 
 
@@ -46,7 +46,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>6.14.3</version>
         </dependency>
 
         <dependency>
@@ -138,6 +138,19 @@
             <artifactId>allure-cucumber6-jvm</artifactId>
             <version>2.14.0</version>
         </dependency>
+
+<!--        ajout de la dependance pour modifier les properties-->
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.9</version>
+        </dependency>
+
+            <dependency>
+                <groupId>com.googlecode.json-simple</groupId>
+                <artifactId>json-simple</artifactId>
+                <version>1.1.1</version>
+            </dependency>
 
     </dependencies>
 

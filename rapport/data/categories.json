@@ -1,0 +1,111 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : " ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]",
+      "children" : [ {
+        "name" : "Connexion error",
+        "uid" : "afe69c9663b1dc78",
+        "parentUid" : "cda566cb3cbf09862697df0912c10b02",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404185390,
+          "stop" : 1630404210971,
+          "duration" : 25581
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cda566cb3cbf09862697df0912c10b02"
+    }, {
+      "name" : "❌ les resultats de recherche restent differents expected [true] but found [false]",
+      "children" : [ {
+        "name" : "No smart number search",
+        "uid" : "f9cfe0698e057a50",
+        "parentUid" : "d9cfa22c57639dbcd15cf0721844303c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404211083,
+          "stop" : 1630404232090,
+          "duration" : 21007
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "economies", "economie" ]
+      } ],
+      "uid" : "d9cfa22c57639dbcd15cf0721844303c"
+    }, {
+      "name" : "❌ la taille du boutton change lors de la modification de l'email expected [true] but found [false]",
+      "children" : [ {
+        "name" : "Button size varying",
+        "uid" : "2d6e8eb432349806",
+        "parentUid" : "23dba0f4317aab090ea198dfec482965",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404232111,
+          "stop" : 1630404259033,
+          "duration" : 26922
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "malikadouma19@gmail.com", "Malika2016*" ]
+      } ],
+      "uid" : "23dba0f4317aab090ea198dfec482965"
+    }, {
+      "name" : "❌ le contenu des l'espace dedie aux videos contient des articles sans video expected [true] but found [false]",
+      "children" : [ {
+        "name" : "Improve search filters",
+        "uid" : "23dd9b05ff2849d",
+        "parentUid" : "f8e8b8462211a4e45da6f354edd413ba",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404259050,
+          "stop" : 1630404265226,
+          "duration" : 6176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f8e8b8462211a4e45da6f354edd413ba"
+    }, {
+      "name" : "❌ le texte n'est toujours pas tres lisible expected [true] but found [false]",
+      "children" : [ {
+        "name" : "Change text color",
+        "uid" : "a4259c1aeb504131",
+        "parentUid" : "2cc19110437f7f3e1b29cfd34608e73a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404269870,
+          "stop" : 1630404281226,
+          "duration" : 11356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2cc19110437f7f3e1b29cfd34608e73a"
+    }, {
+      "name" : "❌ il existe toujours des gransds espacements inutiles expected [false] but found [true]",
+      "children" : [ {
+        "name" : "Superfluous space",
+        "uid" : "cfc85e3288e30fbb",
+        "parentUid" : "9a23c3cfd25e283cfad2133c07520260",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630407500307,
+          "stop" : 1630407516569,
+          "duration" : 16262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9a23c3cfd25e283cfad2133c07520260"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -2,8 +2,10 @@ package com.femmeActuelle.driverManager;
 
 import com.femmeActuelle.config.Properties;
 import com.femmeActuelle.drivers.DriverFactory;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class WebDriverManager {
@@ -31,6 +33,13 @@ public class WebDriverManager {
         } else {
             window.maximize();
         }
+    }
+    public  String getInfo() {
+        Capabilities cap = ((RemoteWebDriver) getDriver()).getCapabilities();
+        String browserName = cap.getBrowserName();
+        String platform = cap.getPlatform().toString();
+        String version = cap.getVersion();
+        return String.format("browser: %s v: %s platform: %s", browserName, version, platform);
     }
     /***
      *

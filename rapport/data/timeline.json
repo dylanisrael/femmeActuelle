@@ -1,0 +1,142 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Maknim.local",
+    "children" : [ {
+      "name" : "35076@Maknim.local.main(1)",
+      "children" : [ {
+        "name" : "Superfluous space",
+        "uid" : "6dcb60d130a4d077",
+        "parentUid" : "0e225b4df4d53577e8002037fa4e1efa",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630403617249,
+          "stop" : 1630403637790,
+          "duration" : 20541
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0e225b4df4d53577e8002037fa4e1efa"
+    }, {
+      "name" : "36555@Maknim.local.main(1)",
+      "children" : [ {
+        "name" : "Superfluous space",
+        "uid" : "cfc85e3288e30fbb",
+        "parentUid" : "5cddd8373af5041680814eaa692fc56d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630407500307,
+          "stop" : 1630407516569,
+          "duration" : 16262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5cddd8373af5041680814eaa692fc56d"
+    }, {
+      "name" : "35254@Maknim.local.main(1)",
+      "children" : [ {
+        "name" : "Change text color",
+        "uid" : "a4259c1aeb504131",
+        "parentUid" : "125dfc6f3f15c2db4288fd8fbb627434",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404269870,
+          "stop" : 1630404281226,
+          "duration" : 11356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Superfluous space",
+        "uid" : "1d96db7344b89e6e",
+        "parentUid" : "125dfc6f3f15c2db4288fd8fbb627434",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404265238,
+          "stop" : 1630404269860,
+          "duration" : 4622
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Connexion error",
+        "uid" : "afe69c9663b1dc78",
+        "parentUid" : "125dfc6f3f15c2db4288fd8fbb627434",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404185390,
+          "stop" : 1630404210971,
+          "duration" : 25581
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "No smart number search",
+        "uid" : "f9cfe0698e057a50",
+        "parentUid" : "125dfc6f3f15c2db4288fd8fbb627434",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404211083,
+          "stop" : 1630404232090,
+          "duration" : 21007
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "economies", "economie" ]
+      }, {
+        "name" : "Button size varying",
+        "uid" : "2d6e8eb432349806",
+        "parentUid" : "125dfc6f3f15c2db4288fd8fbb627434",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404232111,
+          "stop" : 1630404259033,
+          "duration" : 26922
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "malikadouma19@gmail.com", "Malika2016*" ]
+      }, {
+        "name" : "Improve search filters",
+        "uid" : "23dd9b05ff2849d",
+        "parentUid" : "125dfc6f3f15c2db4288fd8fbb627434",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630404259050,
+          "stop" : 1630404265226,
+          "duration" : 6176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "125dfc6f3f15c2db4288fd8fbb627434"
+    }, {
+      "name" : "34958@Maknim.local.main(1)",
+      "children" : [ {
+        "name" : "Superfluous space",
+        "uid" : "dd1db8f78ba5f910",
+        "parentUid" : "8dcbc0cd7c8915dabd39e550669f26b3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630403332193,
+          "stop" : 1630403348126,
+          "duration" : 15933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8dcbc0cd7c8915dabd39e550669f26b3"
+    } ],
+    "uid" : "e07b9d076e6ba5cccb769a138726fb0b"
+  } ]
+}
