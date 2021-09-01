@@ -16,7 +16,7 @@ public class BaseRunner extends AbstractTestNGCucumberTests {
 
     @Parameters({"browser", "device"})
     @BeforeClass
-    public static void beforeTest(@Optional String browser, @Optional String device) throws ConfigurationException, IOException {
+    public static void beforeTest(@Optional String browser, @Optional String device){
         String browserA;
 
         browserA = java.util.Optional
@@ -24,13 +24,14 @@ public class BaseRunner extends AbstractTestNGCucumberTests {
                 .orElse(Properties.Config.getBrowser());
 
         Properties.DriverManager.setDriver(browserA);
-        AllureFilesManager.createEnvironmentPropertiesFile();
-        AllureFilesManager.createCategorieJsonFile();
-        AllureFilesManager.createExecutorJsonFile();
+
     }
 
     @AfterClass
-    public static void tearDown(){
+    public static void tearDown() throws ConfigurationException, IOException {
+        AllureFilesManager.createEnvironmentPropertiesFile();
+        AllureFilesManager.createCategorieJsonFile();
+        AllureFilesManager.createExecutorJsonFile();
         Properties.DriverManager.getDriver().quit();
     }
 

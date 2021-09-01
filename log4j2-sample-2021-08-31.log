@@ -1,0 +1,68 @@
+[INFO ] 2021-08-31 08:31:32.980 [main] BaseRunner - Tests are starting
+[INFO ] 2021-08-31 08:31:47.610 [main] HomePage - On home page
+[INFO ] 2021-08-31 08:31:47.927 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 08:31:48.309 [main] BaseRunner - Tests are ending
+[INFO ] 2021-08-31 08:37:12.799 [main] BaseRunner - Tests are starting
+[INFO ] 2021-08-31 08:37:27.607 [main] HomePage - On home page
+[INFO ] 2021-08-31 08:37:27.919 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 08:37:28.285 [main] BaseRunner - Tests are ending
+[INFO ] 2021-08-31 09:37:34.757 [main] BaseRunner - Tests are starting
+[INFO ] 2021-08-31 09:37:50.915 [main] HomePage - On home page
+[INFO ] 2021-08-31 09:37:51.188 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 09:37:51.437 [main] BaseRunner - Tests are ending
+[INFO ] 2021-08-31 09:57:17.822 [main] HomePage - On home page
+[INFO ] 2021-08-31 09:57:18.077 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 10:12:39.825 [main] HomePage - On home page
+[INFO ] 2021-08-31 10:12:40.105 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 10:15:25.382 [main] HomePage - On home page
+[INFO ] 2021-08-31 10:15:25.656 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 10:18:11.952 [main] HomePage - On home page
+[INFO ] 2021-08-31 10:18:12.203 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 10:49:07.857 [main] HomePage - On home page
+[INFO ] 2021-08-31 10:49:08.118 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 10:53:57.542 [main] HomePage - On home page
+[INFO ] 2021-08-31 10:53:57.783 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 11:03:17.532 [main] HomePage - On home page
+[INFO ] 2021-08-31 11:03:24.436 [main] HomePage - Checking url response code
+[INFO ] 2021-08-31 11:03:35.625 [main] HomePage - On home page
+[INFO ] 2021-08-31 11:03:47.718 [main] PrimaShopPage - Search of economies
+[INFO ] 2021-08-31 11:03:51.191 [main] PrimaShopPage - Search of economie
+[INFO ] 2021-08-31 11:03:52.088 [main] PrimaShopPage - Checking if results are same
+[INFO ] 2021-08-31 11:03:56.775 [main] HomePage - On home page
+[INFO ] 2021-08-31 11:04:05.136 [main] SignupPage - Filling email
+[INFO ] 2021-08-31 11:04:05.873 [main] LoginPage - Filling password
+[INFO ] 2021-08-31 11:04:06.074 [main] LoginPage - User logged succesfully
+[INFO ] 2021-08-31 11:04:16.603 [main] HomePage - Click on My Profile
+[INFO ] 2021-08-31 11:04:18.498 [main] ProfilePage - filling Email
+[INFO ] 2021-08-31 11:04:19.031 [main] ProfilePage - Checking if bbutton size remain the same 
+[INFO ] 2021-08-31 11:04:23.534 [main] HomePage - On home page
+[INFO ] 2021-08-31 11:04:24.711 [main] HomePage - Search input filled with Ovaire 
+[INFO ] 2021-08-31 11:04:25.194 [main] HomePage - Checking if all results are Videos
+[INFO ] 2021-08-31 11:04:29.640 [main] HomePage - On home page
+[INFO ] 2021-08-31 11:04:29.859 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 11:04:34.538 [main] HomePage - On home page
+[INFO ] 2021-08-31 11:04:41.225 [main] WordsGamePage - Checking color
+[INFO ] 2021-08-31 11:58:36.307 [main] HomePage - On home page
+[INFO ] 2021-08-31 11:58:36.561 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 12:51:33.425 [main] HomePage - On home page
+[INFO ] 2021-08-31 12:51:33.668 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 12:53:24.338 [main] HomePage - On home page
+[INFO ] 2021-08-31 12:53:24.585 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 12:56:03.191 [main] HomePage - On home page
+[INFO ] 2021-08-31 12:56:03.456 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 14:00:25.298 [main] HomePage - On home page
+[INFO ] 2021-08-31 14:00:25.562 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 14:07:49.497 [main] HomePage - On home page
+[INFO ] 2021-08-31 14:07:49.742 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 14:18:24.179 [main] HomePage - On home page
+[INFO ] 2021-08-31 14:18:24.441 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 14:20:28.793 [main] HomePage - On home page
+[INFO ] 2021-08-31 14:20:29.063 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 14:23:33.340 [main] HomePage - On home page
+[INFO ] 2021-08-31 14:23:33.593 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 14:42:05.835 [main] HomePage - On home page
+[INFO ] 2021-08-31 14:42:06.102 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 14:58:42.502 [main] HomePage - On home page
+[INFO ] 2021-08-31 14:58:42.774 [main] HomePage - Checking superflous spaces
+[INFO ] 2021-08-31 16:37:26.189 [main] HomePage - On home page
+[INFO ] 2021-08-31 16:37:26.492 [main] HomePage - Checking superflous spaces
