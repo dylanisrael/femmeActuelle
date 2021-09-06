@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
@@ -20,19 +19,21 @@ public class AllureFilesManager {
 
     public static void createEnvironmentPropertiesFile() throws IOException, ConfigurationException
     {
-        FileOutputStream fileOutputStream
-                = new FileOutputStream(
-                "allure-results/environment.properties");
-        File f = new File("allure-results/environment.properties");
+        File environment = new File("allure-results/environment.properties");
 
-        if(!f.exists()){
+        if(!environment.exists()){
+            FileOutputStream fileOutputStream
+                    = new FileOutputStream(
+                    "allure-results/environment.properties");
             java.util.Properties properties = new java.util.Properties();
             properties.setProperty("Test URL ☢️", Properties.Config.getEnvironment());
             properties.setProperty("Headless mode 🌀", String.valueOf(Properties.Config.getHeadless()));
             properties.setProperty("Local browser 🌍", String.valueOf(Properties.Config.getBrowser()));
+            properties.setProperty("Browser version",Properties.Config.getVersion());
+            properties.setProperty("Platform" , Properties.Config.getPlatform());
             properties.store(
                     fileOutputStream,
-                    "environement allure configuration file");
+                    "environment allure configuration file");
 
             fileOutputStream.close();
         }

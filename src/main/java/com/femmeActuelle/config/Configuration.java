@@ -14,16 +14,18 @@ public class Configuration {
     private Boolean headless;
     private String environment;
     private String browser;
-
+    private String platform;
     private Device device;
     private Urls env;
+    private String version;
 
     public Configuration(){
         headless        = Boolean.valueOf(System.getProperty("headless", (String)prop.get("headless", "false")));
         environment     = System.getProperty("env", (String) prop.get("environment"));
         browser         = System.getProperty("browser", (String)prop.get("browser", "chrome"));
         webDriverPath   = (String)prop.get(browser.toLowerCase(), "chrome");
-
+        platform        = Properties.DriverManager.getCapabilities().getPlatform().toString();
+        version         = Properties.DriverManager.getCapabilities().getVersion();
         device          = Device.valueOf(((String)prop.get("device", "desktop")).toUpperCase());
         env             = Urls.valueOf((String)environment.toUpperCase());
 
@@ -32,6 +34,10 @@ public class Configuration {
     public Boolean getHeadless() {
         return headless;
     }
+    
+    public String getPlatform() {return platform;}
+    
+    public String getVersion() {return version;}
 
     public String getEnvironment() { return env.getUrl(); }
 

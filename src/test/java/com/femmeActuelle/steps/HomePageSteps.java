@@ -50,6 +50,7 @@ public class HomePageSteps implements En {
         When("^you scroll down$", homepage::scrollToFooterLevel);
 
         Then("^There is a huge gap between the newsletter container and the footer\\.$", () -> {
+            homepage.saveScreenShotPNG();
             Assert.assertFalse(homepage.thereIsAHugeGap(),"❌ il existe toujours des gransds espacements inutiles");
         });
 

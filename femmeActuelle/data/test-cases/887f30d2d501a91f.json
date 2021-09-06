@@ -1,0 +1,199 @@
+{
+  "uid" : "887f30d2d501a91f",
+  "name" : "No smart number search",
+  "fullName" : "Annomalies mineures: No smart number search",
+  "historyId" : "b732654c516ce5967d9779dd44dff61a",
+  "time" : {
+    "start" : 1630487064628,
+    "stop" : 1630487123640,
+    "duration" : 59012
+  },
+  "status" : "failed",
+  "statusMessage" : "❌ les resultats de recherche restent differents expected [true] but found [false]",
+  "statusTrace" : "java.lang.AssertionError: ❌ les resultats de recherche restent differents expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat com.femmeActuelle.steps.PrimaShopPageSteps.lambda$new$3(PrimaShopPageSteps.java:26)\n\tat ✽.The number of economy research articles with s had to be equal to the one without s.(file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature:19)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "❌ les resultats de recherche restent differents expected [true] but found [false]",
+    "statusTrace" : "java.lang.AssertionError: ❌ les resultats de recherche restent differents expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat com.femmeActuelle.steps.PrimaShopPageSteps.lambda$new$3(PrimaShopPageSteps.java:26)\n\tat ✽.The number of economy research articles with s had to be equal to the one without s.(file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature:19)\n",
+    "steps" : [ {
+      "name" : "Given  Go to femmeactuelle.fr",
+      "time" : {
+        "start" : 1630487064630,
+        "stop" : 1630487069250,
+        "duration" : 4620
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When  Click on subscribe to the magazine on the navigation bar",
+      "time" : {
+        "start" : 1630487069251,
+        "stop" : 1630487078671,
+        "duration" : 9420
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  CLick on see all numbers",
+      "time" : {
+        "start" : 1630487078671,
+        "stop" : 1630487117948,
+        "duration" : 39277
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Do an research economies",
+      "time" : {
+        "start" : 1630487117949,
+        "stop" : 1630487121962,
+        "duration" : 4013
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f23103159f037bef",
+        "name" : "screenshot",
+        "source" : "f23103159f037bef.png",
+        "type" : "image/png",
+        "size" : 4331481
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And  research economie",
+      "time" : {
+        "start" : 1630487121963,
+        "stop" : 1630487123638,
+        "duration" : 1675
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4f58b91487252823",
+        "name" : "screenshot",
+        "source" : "4f58b91487252823.png",
+        "type" : "image/png",
+        "size" : 1840287
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then  The number of economy research articles with s had to be equal to the one without s.",
+      "time" : {
+        "start" : 1630487123639,
+        "stop" : 1630487123639,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "❌ les resultats de recherche restent differents expected [true] but found [false]",
+      "statusTrace" : "java.lang.AssertionError: ❌ les resultats de recherche restent differents expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat com.femmeActuelle.steps.PrimaShopPageSteps.lambda$new$3(PrimaShopPageSteps.java:26)\n\tat ✽.The number of economy research articles with s had to be equal to the one without s.(file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature:19)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "MinorAbnormalities"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "tag",
+    "value" : "bug_1435"
+  }, {
+    "name" : "host",
+    "value" : "Maknim.local"
+  }, {
+    "name" : "thread",
+    "value" : "49086@Maknim.local.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Annomalies mineures"
+  }, {
+    "name" : "story",
+    "value" : "No smart number search"
+  }, {
+    "name" : "suite",
+    "value" : "Annomalies mineures"
+  }, {
+    "name" : "testClass",
+    "value" : "No smart number search"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.MinorAbnormalities_feature.Annomalies mineures"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "with s",
+    "value" : "economies"
+  }, {
+    "name" : "without s",
+    "value" : "economie"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "KO tests",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "bug_1435", "MinorAbnormalities" ]
+  },
+  "source" : "887f30d2d501a91f.json",
+  "parameterValues" : [ "economies", "economie" ]
+}

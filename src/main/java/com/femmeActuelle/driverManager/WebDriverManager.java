@@ -14,6 +14,8 @@ public class WebDriverManager {
 
     private ThreadLocal<DriverFactory> driver = new ThreadLocal<>();
 
+    private Capabilities cap = ((RemoteWebDriver) getDriver()).getCapabilities();
+
     private WebDriverManager() { }
 
     public WebDriver getDriver() { return driver.get().getDriver(); }
@@ -21,6 +23,9 @@ public class WebDriverManager {
     public void setDriver(String browser) {
         driver.set(new DriverFactory(browser));
         setWindowSize();
+    }
+    public Capabilities getCapabilities() {
+        return cap;
     }
 
     private void setWindowSize() {
@@ -35,12 +40,12 @@ public class WebDriverManager {
         }
     }
     public  String getInfo() {
-        Capabilities cap = ((RemoteWebDriver) getDriver()).getCapabilities();
-        String browserName = cap.getBrowserName();
-        String platform = cap.getPlatform().toString();
-        String version = cap.getVersion();
+         String browserName = cap.getBrowserName();
+         String platform = cap.getPlatform().toString();
+         String version = cap.getVersion();
         return String.format("browser: %s v: %s platform: %s", browserName, version, platform);
     }
+
     /***
      *
      * @static
