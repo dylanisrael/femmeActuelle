@@ -1,0 +1,157 @@
+{
+  "uid" : "3885a763f925ab44",
+  "name" : "Connexion error",
+  "fullName" : "Annomalies mineures: Connexion error",
+  "historyId" : "dcf679e2f5e419ee9f83761b91689a35",
+  "time" : {
+    "start" : 1630487042385,
+    "stop" : 1630487064507,
+    "duration" : 22122
+  },
+  "status" : "failed",
+  "statusMessage" : " ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]",
+  "statusTrace" : "java.lang.AssertionError:  ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat com.femmeActuelle.steps.HomePageSteps.lambda$new$0(HomePageSteps.java:21)\n\tat ✽.The display of the page content should correspond to the Attendance certified by the OjD link.(file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature:10)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : " ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]",
+    "statusTrace" : "java.lang.AssertionError:  ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat com.femmeActuelle.steps.HomePageSteps.lambda$new$0(HomePageSteps.java:21)\n\tat ✽.The display of the page content should correspond to the Attendance certified by the OjD link.(file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature:10)\n",
+    "steps" : [ {
+      "name" : "Given  Go to femmeactuelle.fr",
+      "time" : {
+        "start" : 1630487042389,
+        "stop" : 1630487050257,
+        "duration" : 7868
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When  Scroll down to footer level",
+      "time" : {
+        "start" : 1630487050267,
+        "stop" : 1630487050275,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Click on Attendance certified by the OJD",
+      "time" : {
+        "start" : 1630487050276,
+        "stop" : 1630487050794,
+        "duration" : 518
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then  The display of the page content should correspond to the Attendance certified by the OjD link.",
+      "time" : {
+        "start" : 1630487050796,
+        "stop" : 1630487064504,
+        "duration" : 13708
+      },
+      "status" : "failed",
+      "statusMessage" : " ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]",
+      "statusTrace" : "java.lang.AssertionError:  ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat com.femmeActuelle.steps.HomePageSteps.lambda$new$0(HomePageSteps.java:21)\n\tat ✽.The display of the page content should correspond to the Attendance certified by the OjD link.(file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature:10)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dadd674f33e84db3",
+        "name" : "screenshot",
+        "source" : "dadd674f33e84db3.png",
+        "type" : "image/png",
+        "size" : 83946
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "MinorAbnormalities"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "tag",
+    "value" : "bug_1388"
+  }, {
+    "name" : "host",
+    "value" : "Maknim.local"
+  }, {
+    "name" : "thread",
+    "value" : "49086@Maknim.local.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Annomalies mineures"
+  }, {
+    "name" : "story",
+    "value" : "Connexion error"
+  }, {
+    "name" : "suite",
+    "value" : "Annomalies mineures"
+  }, {
+    "name" : "testClass",
+    "value" : "Connexion error"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///Users/dylanIsrael/IdeaProjects/cucumber/femmeActuelle/src/test/resources/features/MinorAbnormalities.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.MinorAbnormalities_feature.Annomalies mineures"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "KO tests",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "MinorAbnormalities", "bug_1388" ]
+  },
+  "source" : "3885a763f925ab44.json",
+  "parameterValues" : [ ]
+}

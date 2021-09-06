@@ -1,0 +1,122 @@
+{
+  "9df898a1d448502e0f788365940a8e6" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b599f8acb0a6ef0b",
+      "status" : "failed",
+      "statusDetails" : "❌ le texte n'est toujours pas tres lisible expected [true] but found [false]",
+      "time" : {
+        "start" : 1630487169856,
+        "stop" : 1630487177298,
+        "duration" : 7442
+      }
+    } ]
+  },
+  "b732654c516ce5967d9779dd44dff61a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "887f30d2d501a91f",
+      "status" : "failed",
+      "statusDetails" : "❌ les resultats de recherche restent differents expected [true] but found [false]",
+      "time" : {
+        "start" : 1630487064628,
+        "stop" : 1630487123640,
+        "duration" : 59012
+      }
+    } ]
+  },
+  "dcf679e2f5e419ee9f83761b91689a35" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3885a763f925ab44",
+      "status" : "failed",
+      "statusDetails" : " ❌ Le lien nous redirige vers une page d'erreur expected [true] but found [false]",
+      "time" : {
+        "start" : 1630487042385,
+        "stop" : 1630487064507,
+        "duration" : 22122
+      }
+    } ]
+  },
+  "6f3da7fa815e364b50a4e9dbf9883d2a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a08164a7efa7008f",
+      "status" : "failed",
+      "statusDetails" : "❌ il existe toujours des gransds espacements inutiles expected [false] but found [true]",
+      "time" : {
+        "start" : 1630488932204,
+        "stop" : 1630488945045,
+        "duration" : 12841
+      }
+    } ]
+  },
+  "c3f176efc7179c66a3ac70c2480cafbc" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5852f1b238a0919b",
+      "status" : "failed",
+      "statusDetails" : "❌ la taille du boutton change lors de la modification de l'email expected [true] but found [false]",
+      "time" : {
+        "start" : 1630487123805,
+        "stop" : 1630487157236,
+        "duration" : 33431
+      }
+    } ]
+  },
+  "ff6757885bf32e218d27b35756a9ec72" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "317b0cb01bfc02c4",
+      "status" : "failed",
+      "statusDetails" : "❌ le contenu des l'espace dedie aux videos contient des articles sans video expected [true] but found [false]",
+      "time" : {
+        "start" : 1630487157257,
+        "stop" : 1630487165049,
+        "duration" : 7792
+      }
+    } ]
+  }
+}
