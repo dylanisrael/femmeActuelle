@@ -24,8 +24,6 @@ public class Configuration {
         environment     = System.getProperty("env", (String) prop.get("environment"));
         browser         = System.getProperty("browser", (String)prop.get("browser", "chrome"));
         webDriverPath   = (String)prop.get(browser.toLowerCase(), "chrome");
-        platform        = Properties.DriverManager.getCapabilities().getPlatform().toString();
-        version         = Properties.DriverManager.getCapabilities().getVersion();
         device          = Device.valueOf(((String)prop.get("device", "desktop")).toUpperCase());
         env             = Urls.valueOf((String)environment.toUpperCase());
 
@@ -35,10 +33,6 @@ public class Configuration {
         return headless;
     }
     
-    public String getPlatform() {return platform;}
-    
-    public String getVersion() {return version;}
-
     public String getEnvironment() { return env.getUrl(); }
 
     public String getBrowser() {

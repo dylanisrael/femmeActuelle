@@ -1,7 +1,6 @@
 package com.femmeActuelle.utils;
 
 import com.femmeActuelle.config.Properties;
-import org.apache.commons.configuration.ConfigurationException;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -17,7 +16,7 @@ public class AllureFilesManager {
 
     public static Logger logger = getLogger(AllureFilesManager.class);
 
-    public static void createEnvironmentPropertiesFile() throws IOException, ConfigurationException
+    public static void createEnvironmentPropertiesFile() throws IOException
     {
         File environment = new File("allure-results/environment.properties");
 
@@ -29,8 +28,7 @@ public class AllureFilesManager {
             properties.setProperty("Test URL ☢️", Properties.Config.getEnvironment());
             properties.setProperty("Headless mode 🌀", String.valueOf(Properties.Config.getHeadless()));
             properties.setProperty("Local browser 🌍", String.valueOf(Properties.Config.getBrowser()));
-            properties.setProperty("Browser version",Properties.Config.getVersion());
-            properties.setProperty("Platform" , Properties.Config.getPlatform());
+
             properties.store(
                     fileOutputStream,
                     "environment allure configuration file");
@@ -101,8 +99,6 @@ public class AllureFilesManager {
                 e.printStackTrace();
             }
         }
-
-
     }
 
     public static void createExecutorJsonFile () {
@@ -127,7 +123,5 @@ public class AllureFilesManager {
             }
 
         }
-
     }
-
 }
